@@ -29,41 +29,6 @@ function createMap(quakeMap) {
     }).addTo(map);
 
 
-    
-    // function  getColor(s) {
-    //     if ( s === '0 - 10') 
-    //         return 'blue';
-    //     else if ( s === '10 - 30') 
-    //         return 'green';
-    //     else if ( s === '30 - 50') 
-    //         return 'yellow';
-    //     else if ( s === '50 - 70') 
-    //         return 'orange';
-    //     else if ( s === '70 - 90') 
-    //         return 'brown';
-    //     else
-    //         return 'red';
-    //     }
-    // var legend = L.control({position: 'bottomright'});
-    
-    
-    // legend.onAdd = function (map) {
-    //     var legendDiv =  L.DomUtil.create('div', 'info legend'),
-    //         levels = ['0 - 10', '10 - 30', '30 - 50', '50 - 70', '70 - 90', '90+'],
-    //         title= ['<strong>Depth</strong>'],
-    //         labels = [];
-    //     for ( var i=0; i < levels.length; i++) {
-    //         labels.push( 
-    //             '<i class="square" style="background:' + getColor(levels[i]) + '"></i>'+ levels[i] + '')
-    //         }
-    //         legendDiv.innerHTML = labels.join('<br>');
-    
-    
-    //         return legendDiv;
-    //     }
-    
-    //     legend.addTo(map);
-
       function getColor(d) {
         return d === '0 - 10'  ? "#de2d26" :
              d === '10 - 30'  ? "#377eb8" :
@@ -73,26 +38,6 @@ function createMap(quakeMap) {
                 "#984ea3" ;
       };
 
-
-        // var legend = L.control({position: 'bottomright'});
-        // legend.onAdd = function (map) {
-    
-        // var div = L.DomUtil.create('div', 'info legend');
-        // labels = ['<strong>Depth</strong>'],
-        // categories = ['0 - 10', '10 - 30', '30 - 50', '50 - 70', '70 - 90', '90+'];
-    
-        // for (var i = 0; i < categories.length; i++) {
-    
-        //         div.innerHTML += 
-        //         labels.push(
-        //             '<i class="square" style="background:' + getColor(categories[i]) + '"></i> ' +
-        //         (categories[i] ? categories[i] : '+'));
-    
-        //     }
-        //     div.innerHTML = labels.join('<br>');
-        // return div;
-        // };
-        // legend.addTo(map);
 
         var legend = L.control({ position: "bottomright" });
 
