@@ -15,7 +15,7 @@ function createMap(quakeMap) {
       };
 
     var overlayMaps = {
-        "Quake sites": quakeMap
+        "Earthquakes": quakeMap
       };
 
     var map = L.map("map", {
@@ -29,14 +29,6 @@ function createMap(quakeMap) {
     }).addTo(map);
 
 
-      function getColor(d) {
-        return d === '0 - 10'  ? "#de2d26" :
-             d === '10 - 30'  ? "#377eb8" :
-             d === '30 - 50' ? "#4daf4a" :
-             d === '50 - 70' ? "#984ea3" :
-             d === '70 - 90' ? "#984ea3" :
-                "#984ea3" ;
-      };
 
 
         var legend = L.control({ position: "bottomright" });
