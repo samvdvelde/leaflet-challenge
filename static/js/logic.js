@@ -106,7 +106,7 @@ function createCircles(response) {
 
         
         var quakeCircles = L.circleMarker([lat, lon], {
-            fillOpacity: 0.3,
+            fillOpacity: 0.4,
             color: "gray",
             weight: 0.5,
             fillColor: fillcolor,
